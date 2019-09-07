@@ -1,0 +1,8 @@
+<div *ngIf="photoService.photos.length" class="gallery">
+  <app-card *ngFor="let p of photoService.photos" [imageName]="p.Name" [imageUri]="p.Uri"></app-card>
+</div>
+
+<div class="not-found" *ngIf="!photoService.photos.length">
+  <h2>No photos Found !</h2>
+  <button mat-raised-button color="primary" routerLink="/gallery/add">Add a new photo</button>
+</div>

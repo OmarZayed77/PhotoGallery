@@ -1,0 +1,9 @@
+<form novalidate [formGroup]="photoForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data" class="form-container">
+  <div class="form-group">
+    <input formControlName="photo" name="photo" type="file" accept="image/*" required (change)="onChange($event)">
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button mat-raised-button color="warn" routerLink="/gallery">Cancel</button>
+  </div>
+</form>

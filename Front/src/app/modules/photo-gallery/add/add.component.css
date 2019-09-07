@@ -1,0 +1,9 @@
+.form-container
+{
+    width: 50%;
+    margin: 0.5rem auto;
+    display: flex;
+}
+.mat-raised-button {
+    margin-left: 0.5rem;
+}
